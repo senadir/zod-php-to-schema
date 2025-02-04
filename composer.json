@@ -30,7 +30,8 @@
         "wp-coding-standards/wpcs": "^3.0",
         "dealerdirect/phpcodesniffer-composer-installer": "^1.0",
         "phpcompatibility/phpcompatibility-wp": "^2.1",
-        "phpcompatibility/php-compatibility": "^9.3"
+        "phpcompatibility/php-compatibility": "^9.3",
+        "captainhook/captainhook": "^5.24"
     },
     "scripts": {
         "test": "phpunit",
