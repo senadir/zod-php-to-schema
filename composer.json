@@ -3,6 +3,13 @@
     "description": "Convert Zod-like PHP objects to JSON Schema definitions",
     "type": "library",
     "license": "MIT",
+    "authors": [
+        {
+            "name": "Nadir Seghir",
+            "email": "nadir.seghir@gmail.com",
+            "homepage": "https://nadir.blog"
+        }
+    ],
     "autoload": {
         "psr-4": {
             "Nadir\\Zod2Schema\\": "src/"
@@ -33,5 +40,17 @@
         "allow-plugins": {
             "dealerdirect/phpcodesniffer-composer-installer": true
         }
-    }
+    },
+    "keywords": [
+        "zod",
+        "json-schema",
+        "validation",
+        "schema"
+    ],
+    "homepage": "https://github.com/senadir/zod-php-to-schema",
+    "support": {
+        "issues": "https://github.com/senadir/zod-php-to-schema/issues",
+        "source": "https://github.com/senadir/zod-php-to-schema"
+    },
+    "minimum-stability": "stable"
 }
