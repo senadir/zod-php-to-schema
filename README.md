@@ -21,6 +21,8 @@ $userSchema = Z::object([
     'email' => Z::string()->email(),
     'tags' => Z::array(Z::string())
 ])->to_json_schema();
+
+echo json_encode($userSchema, JSON_PRETTY_PRINT);
 ```
 
 Which will output:
@@ -68,6 +70,8 @@ $userSchemaWithOptional = Z::object([
     'email' => Z::string()->email(),         // required
     'tags' => Z::array(Z::string())->optional() // optional
 ])->to_json_schema();
+
+echo json_encode($userSchemaWithOptional, JSON_PRETTY_PRINT);
 ```
 
 Which will output:
@@ -109,6 +113,8 @@ $statusSchema = Z::union([
     Z::literal('inactive'),
     Z::literal('pending')
 ])->to_json_schema();
+
+echo json_encode($statusSchema, JSON_PRETTY_PRINT);
 ```
 
 Which will output:
