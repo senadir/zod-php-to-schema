@@ -1,10 +1,10 @@
 <?php
 declare(strict_types=1);
 
-namespace Nadir\Zod2Schema\Tests;
+namespace Zod2Schema\Zod2Schema\Tests;
 
-use Nadir\Zod2Schema\Z;
-use Nadir\Zod2Schema\Schema;
+use Zod2Schema\Zod2Schema\Z;
+use Zod2Schema\Zod2Schema\Schema;
 use PHPUnit\Framework\TestCase;
 
 /**

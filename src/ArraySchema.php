@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace Nadir\Zod2Schema;
+namespace Zod2Schema\Zod2Schema;
 
 /**
  * Represents a JSON Schema array definition.

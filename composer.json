@@ -1,5 +1,5 @@
 {
-    "name": "nadir/zod-php-to-schema",
+    "name": "senadir/zod-php-to-schema",
     "description": "Convert Zod-like PHP objects to JSON Schema definitions",
     "type": "library",
     "license": "MIT",

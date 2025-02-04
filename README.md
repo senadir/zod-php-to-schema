@@ -11,8 +11,8 @@ composer require nadir/zod-php-to-schema
 ## Usage
 
 ```php
-use Nadir\Zod2Schema\Z;
-use Nadir\Zod2Schema\Schema;
+use Zod2Schema\Zod2Schema\Z;
+use Zod2Schema\Zod2Schema\Schema;
 
 // By default, fields are not required
 $userSchema = Z::object([
@@ -57,8 +57,8 @@ Which will output:
 You can also enable required fields globally:
 
 ```php
-use Nadir\Zod2Schema\Z;
-use Nadir\Zod2Schema\Schema;
+use Zod2Schema\Zod2Schema\Z;
+use Zod2Schema\Zod2Schema\Schema;
 
 // Enable required fields globally
 Schema::set_require_all_fields(true);

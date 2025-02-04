@@ -10,7 +10,7 @@
  */
 
 declare(strict_types=1);
-namespace Nadir\Zod2Schema;
+namespace Zod2Schema\Zod2Schema;
 
 /**
  * Schema builder class for creating JSON Schema definitions.

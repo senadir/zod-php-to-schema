@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace Nadir\Zod2Schema;
+namespace Zod2Schema\Zod2Schema;
 
 /**
  * Base Schema class for Zod-like schema definitions
