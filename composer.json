@@ -2,6 +2,7 @@
     "name": "senadir/zod-php-to-schema",
     "description": "Convert Zod-like PHP objects to JSON Schema definitions",
     "type": "library",
+    "version": "1.0.0",
     "license": "MIT",
     "authors": [
         {
@@ -12,12 +13,12 @@
     ],
     "autoload": {
         "psr-4": {
-            "Nadir\\Zod2Schema\\": "src/"
+            "Zod2Schema\\Zod2Schema\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Nadir\\Zod2Schema\\Tests\\": "tests/"
+            "Zod2Schema\\Zod2Schema\\Tests\\": "tests/"
         }
     },
     "require": {
