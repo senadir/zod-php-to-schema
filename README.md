@@ -124,15 +124,15 @@ Which will output:
     "anyOf": [
         {
             "type": "string",
-            "enum": ["active"]
+            "const": "active"
         },
         {
             "type": "string",
-            "enum": ["inactive"]
+            "const": "inactive"
         },
         {
             "type": "string",
-            "enum": ["pending"]
+            "const": "pending"
         }
     ]
 }

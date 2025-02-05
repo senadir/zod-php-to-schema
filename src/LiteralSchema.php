@@ -21,6 +21,7 @@ class LiteralSchema extends Schema {
 	 */
 	public function __construct( $value ) {
 		$this->value = $value;
+		$this->type  = gettype( $value );
 	}
 
 	/**
@@ -29,6 +30,9 @@ class LiteralSchema extends Schema {
 	 * @return array The JSON Schema representation.
 	 */
 	public function to_json_schema(): array {
-		return array( 'const' => $this->value );
+		return array(
+			'type'  => $this->type,
+			'const' => $this->value,
+		);
 	}
 }

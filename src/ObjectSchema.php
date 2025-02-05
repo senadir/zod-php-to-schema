@@ -61,10 +61,8 @@ class ObjectSchema extends Schema {
 		// Convert property schemas to JSON Schema.
 		$properties = array();
 		foreach ( $this->property_schemas as $key => $property_schema ) {
-			// For nested schemas, we need to use to_json_schema() to get their full structure.
-			$properties[ $key ] = $property_schema instanceof ObjectSchema || $property_schema instanceof ArraySchema
-				? $property_schema->to_json_schema()
-				: $property_schema->get_base_schema();
+			// Call to_json_schema() on all schema types.
+			$properties[ $key ] = $property_schema->to_json_schema();
 		}
 		$schema['properties'] = $properties;
 

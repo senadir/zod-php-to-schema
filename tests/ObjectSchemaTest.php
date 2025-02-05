@@ -207,8 +207,9 @@ class ObjectSchemaTest extends TestCase {
 	public function testObjectWithArraySchemaWithoutRequired() {
 		$schema = Z::object(
 			array(
-				'name' => Z::string(),
-				'tags' => Z::array( Z::string() ),
+				'name'     => Z::string(),
+				'tags'     => Z::array( Z::string() ),
+				'category' => Z::literal( 'doctor' ),
 			)
 		)->to_json_schema();
 
@@ -216,10 +217,14 @@ class ObjectSchemaTest extends TestCase {
 			array(
 				'type'       => 'object',
 				'properties' => array(
-					'name' => array( 'type' => 'string' ),
-					'tags' => array(
+					'name'     => array( 'type' => 'string' ),
+					'tags'     => array(
 						'type'  => 'array',
 						'items' => array( 'type' => 'string' ),
+					),
+					'category' => array(
+						'type'  => 'string',
+						'const' => 'doctor',
 					),
 				),
 			),
